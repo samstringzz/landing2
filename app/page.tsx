@@ -4,10 +4,14 @@ import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
+import Event from "@/components/Event";
 import Features from "@/components/Features";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import Products from "@/components/Products";
+import Services from "@/components/Services";
+import Tagline from "@/components/Tagline";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
@@ -24,9 +28,11 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Gallery />
+      <Event />
+      <Tagline />
+      <Services />
       <Testimonials />
-      <Brands />
-      <Blog />
+      <Products />
       <Contact />
     </>
   );
