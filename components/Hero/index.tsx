@@ -18,7 +18,7 @@ const Hero = () => {
                   Hi, I'm Alika Maya
                 </h1>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Empowering Lives Through Style & Inspiration
+                  Empowering Lives Through Style & Inspirations
                 </p> 
               </div>
             </div>
