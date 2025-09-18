@@ -4,39 +4,24 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Personal Styling",
-      description: "Get personalized fashion advice from our expert stylists to create the perfect look for any occasion.",
-      icon: "👗"
+      title: "Photography",
+      price: "₦150 /SESSION",
+      description: "Professional photography services for personal branding and business needs.",
+      icon: "📸"
     },
     {
       id: 2,
-      title: "Custom Tailoring",
-      description: "Bespoke tailoring services to ensure every piece fits you perfectly and reflects your personal style.",
-      icon: "✂️"
+      title: "Brand Strategy",
+      price: "₦400 /PROJECT",
+      description: "Comprehensive brand development and strategic planning for entrepreneurs.",
+      icon: "🎯"
     },
     {
       id: 3,
-      title: "VIP Shopping Experience",
-      description: "Exclusive shopping appointments with private consultations and early access to new collections.",
-      icon: "💎"
-    },
-    {
-      id: 4,
-      title: "Wardrobe Consultation",
-      description: "Professional wardrobe analysis to help you build a cohesive and versatile clothing collection.",
-      icon: "🪞"
-    },
-    {
-      id: 5,
-      title: "Event Styling",
-      description: "Complete styling services for special events, from red carpet to corporate functions.",
-      icon: "🌟"
-    },
-    {
-      id: 6,
-      title: "Fashion Education",
-      description: "Learn about fashion trends, styling techniques, and how to build a timeless wardrobe.",
-      icon: "📚"
+      title: "Social Media Marketing",
+      price: "₦250 /MONTH",
+      description: "Expert social media management and content strategy for maximum engagement.",
+      icon: "📱"
     }
   ];
 
@@ -60,13 +45,24 @@ const Services = () => {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-4xl">
                   {service.icon}
                 </div>
+                <div className="mb-2 text-2xl font-bold text-primary">
+                  {service.price}
+                </div>
                 <h3 className="text-xl font-bold text-dark dark:text-white">
                   {service.title}
                 </h3>
               </div>
-              <p className="text-center text-body-color dark:text-body-color-dark">
+              <p className="mb-6 text-center text-body-color dark:text-body-color-dark">
                 {service.description}
               </p>
+              <div className="text-center">
+                <a
+                  href="#contact"
+                  className="inline-block text-red-600 font-semibold hover:text-red-700 transition-colors duration-300"
+                >
+                  Learn More >>
+                </a>
+              </div>
             </div>
           ))}
         </div>
